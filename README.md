@@ -103,6 +103,8 @@ The observed reconnaissance activity can be mapped to:
 
 **T1046 — Network Service Scanning**
 
+https://attack.mitre.org/techniques/T1046/
+
 This technique involves scanning systems to identify available network services and potential attack surfaces.
 The observed behavior is consistent with this technique because the source system attempted to communicate with multiple ports on the target host.  
 
