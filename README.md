@@ -71,7 +71,7 @@ tcp.flags.syn ==1 && tcp.flags.ack ==1
 
 - At this stage of the investigation, we have confirmed that active network scanning is taking place. The traffic pattern is consistent with a TCP SYN scan, with ports (135,139,445,3389) open.
 
-**Tip**  
+**- Tip**  
 
 Wireshark displays relative TCP sequence numbers by default to make packet analysis easier. These are not the actual sequence numbers from the packets.  
 To view the real TCP sequence numbers, go to **Edit → Preferences → Protocols → TCP and uncheck Relative sequence numbers**.After disabling this option, we can see that the SYN packets have the same sequence number pattern. This is unusual for normal TCP communication and can be an indicator of automated scanning activity.
