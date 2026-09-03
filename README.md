@@ -50,12 +50,12 @@ As a SOC analyst, the investigation focuses on answering the following questions
 
 - This traffic pattern appears to be port-scanning activity so, we will follow the TCP stream of a well known port and for a random port to see the conversation
 
-  **Port 3389**
+  **RDP Port 3389 (Known)**
 
 <img width="1759" height="168" alt="image" src="https://github.com/user-attachments/assets/abf4e431-7d09-4cca-8258-7a8fb3b34339" />
 
 
-  **Port 8888**
+  **Port 8888 (Random)**
 
   <img width="1701" height="212" alt="image" src="https://github.com/user-attachments/assets/68e38b45-ebd5-4b2a-9db7-ed77201a9558" />
 
