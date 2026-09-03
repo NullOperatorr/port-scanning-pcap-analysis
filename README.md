@@ -118,7 +118,7 @@ TCP SYN Scan (commonly referred to as a half-open scan or stealth scan) is an ac
   Source-IP: 192.168.1.6
   
 - Which host was targeted?  
-  Dst-Ip: 192.168.1.2
+  Dst-IP: 192.168.1.2
   
 - Which ports and services were targeted?  
   135,139,445,3389
