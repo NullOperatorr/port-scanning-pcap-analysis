@@ -46,6 +46,32 @@ As a SOC analyst, the investigation focuses on answering the following questions
   <img width="1874" height="543" alt="image" src="https://github.com/user-attachments/assets/4f92cef3-9d34-4416-9894-3a0db2c8f6de" />
 
 
+
+
+- This traffic pattern appears to be port-scanning activity so, we will follow the TCP stream of a well known port and for a random port to see the conversation
+
+  **Port 3389**
+
+<img width="1759" height="168" alt="image" src="https://github.com/user-attachments/assets/abf4e431-7d09-4cca-8258-7a8fb3b34339" />
+
+
+  **Port 8888**
+
+  <img width="1701" height="212" alt="image" src="https://github.com/user-attachments/assets/68e38b45-ebd5-4b2a-9db7-ed77201a9558" />
+
+
+
+-  To identify the scan type, we will use the packets using the following  filter:
+
+```bash
+tcp.flags.syn ==1 && tcp.flags.ack ==1
+```
+<img width="1888" height="502" alt="image" src="https://github.com/user-attachments/assets/ab170c59-0eb7-4c06-a03b-631dc1149e2b" />
+
+
+
+
+
 ---
 
 ## #Findings
@@ -93,10 +119,10 @@ TCP SYN Scan (commonly referred to as a half-open scan or stealth scan) is an ac
   Source-IP: 192.168.1.6
   
 - Which host was targeted?  
-  Dest-Ip: 192.168.1.5
+  Dst-Ip: 192.168.1.2
   
 - Which ports and services were targeted?  
-  135,3389
+  135,139,445,3389
   
 - What scanning technique was used?  
   TCP SYN Scan
