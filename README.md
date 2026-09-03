@@ -94,5 +94,26 @@ TCP SYN Scan (commonly referred to as a half-open scan or stealth scan) is an ac
 - Does the activity represent a True Positive or False Positive?  
   True Positive
 
+## #MITRE ATT&CK Mapping
 
+The observed reconnaissance activity can be mapped to:
+
+**T1046 — Network Service Scanning**
+
+This technique involves scanning systems to identify available network services and potential attack surfaces.
+The observed behavior is consistent with this technique because the source system attempted to communicate with multiple ports on the target host.  
+
+## #Recommended Actions
+
+- At the time of analysis, the observed activity appears to represent reconnaissance rather than confirmed exploitation.
+- Port scanning by itself does not demonstrate that a system was compromised. However, it can represent an early stage of an attack.
+- The risk level should therefore be determined based on the target's importance and the source of the traffic.
+
+The SOC team should consider the following actions:
+
+- Search the SIEM for additional activity from the same source.
+- Review firewall and IDS/IPS logs for related connections.
+- Determine whether other hosts were targeted.
+- Block or restrict the source if the activity is confirmed to be unauthorized.
+- Search for the identified IOC across the environment.
 
