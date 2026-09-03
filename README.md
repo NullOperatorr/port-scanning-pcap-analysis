@@ -168,5 +168,5 @@ The SOC team should consider the following actions:
 ## #Lessons Learned
 
 This investigation shows the importance of correlating network logs with packet-level evidence.  
-While logs can identify suspicious connection attempts, Wireshark provides additional visibility into the underlying network behavior including TCP flags.
+While logs can identify suspicious connection attempts, Wireshark provides visibility into the network behavior including TCP flags.
 
