@@ -48,11 +48,11 @@ This behavior can indicate an attempt to identify:
 - Potential attack surfaces
 - Services that could potentially be exploited
 
-Based on the packet behavior, the scanning activity is TCP SYN Scan.
+Based on the packet behavior, the scanning activity is **TCP SYN Scan**.
 
 TCP SYN Scan (commonly referred to as a half-open scan or stealth scan) is an active network reconnaissance technique used to discover open ports on a target host without completing the full TCP three-way handshake.
 
-**Note** 
+**Notes:** 
 
 **Normal 3-Way handshake**  
 
