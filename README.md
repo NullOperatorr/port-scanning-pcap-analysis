@@ -56,12 +56,16 @@ TCP SYN Scan (commonly referred to as a half-open scan or stealth scan) is an ac
 
 **Normal 3-Way handshake**  
 
+<p align="center">
 <img width="500" height="200" alt="image" src="https://github.com/user-attachments/assets/9ec73a6c-00ea-498a-af6e-48c5930235a3" />  
+</p>
 
 
 **TCP SYN Scan**
 - When the Port is OPEN (Half-Open Scan), The attacker sends a SYN packet, the target responds with SYN-ACK (proving it is open), and the attacker immediately replies with a RST (Reset) packet to kill the connection before it fully opens.
  - When the Port is CLOSED, The attacker sends a SYN packet, the target immediately rejects it with a RST (Reset) packet, and the attacker sends no reply at all because the target has already shut down the conversation.
 
-   <img width="600" height="240" alt="image" src="https://github.com/user-attachments/assets/c5ba0ad2-292e-447b-887c-f7d1519904c0" />
+<p align="center">
+<img width="600" height="240" alt="image" src="https://github.com/user-attachments/assets/c5ba0ad2-292e-447b-887c-f7d1519904c0" />
+</p>
 
