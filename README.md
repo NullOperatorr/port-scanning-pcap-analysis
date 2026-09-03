@@ -69,3 +69,30 @@ TCP SYN Scan (commonly referred to as a half-open scan or stealth scan) is an ac
 <img width="600" height="240" alt="image" src="https://github.com/user-attachments/assets/b629bc18-a9ea-4937-ac33-159af7306281" />
 </p>
 
+
+
+## #Indicators of Compromise
+
+- What caused the suspicious activity?
+  Active Reconnaissance (Port Scanning)
+  
+- Which host initiated the activity?
+  Source-IP: 192.168.1.6
+  
+- Which host was targeted?
+  Dest-Ip: 192.168.1.5
+  
+- Which ports and services were targeted?
+  135,3389
+  
+- What scanning technique was used?
+  TCP SYN Scan
+  
+- Was the activity successful?
+  Yes
+  
+- Does the activity represent a True Positive or False Positive?
+  True Positive
+
+
+
