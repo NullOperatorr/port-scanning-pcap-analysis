@@ -69,8 +69,7 @@ tcp.flags.syn ==1 && tcp.flags.ack ==1
 <img width="1888" height="502" alt="image" src="https://github.com/user-attachments/assets/ab170c59-0eb7-4c06-a03b-631dc1149e2b" />
 
 
-
-
+- At this stage of the investigation, we have confirmed that active network scanning is taking place. The traffic pattern is consistent with a TCP SYN scan, with ports (135,139,445,3389) open.
 
 ---
 
