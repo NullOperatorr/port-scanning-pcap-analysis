@@ -32,6 +32,11 @@ As a SOC analyst, the investigation focuses on answering the following questions
 
 ## #Incident Analysis
 
+- After initial scrolling of the .PCAP file, it was observed 2103 packets of the typically the same IP addresses
+  
+<img width="1893" height="656" alt="image" src="https://github.com/user-attachments/assets/1be3b4e0-f9a5-4260-9deb-c2ba160b6ad4" />
+<img width="1529" height="345" alt="image" src="https://github.com/user-attachments/assets/36b29bc6-76ef-4695-8d2f-0f81cb26d8f9" />
+
 
 ---
 
