@@ -32,10 +32,18 @@ As a SOC analyst, the investigation focuses on answering the following questions
 
 ## #Incident Analysis
 
-- After initial scrolling of the .PCAP file, it was observed 2103 packets of the typically the same IP addresses
+- After initial scrolling of the .PCAP file, it was observed 2103 packets and 2100 between two local devices.
   
 <img width="1893" height="656" alt="image" src="https://github.com/user-attachments/assets/1be3b4e0-f9a5-4260-9deb-c2ba160b6ad4" />
 <img width="1529" height="345" alt="image" src="https://github.com/user-attachments/assets/36b29bc6-76ef-4695-8d2f-0f81cb26d8f9" />
+
+- Apply the following filter will show that (192.168.1.6) send many SYN messages on different ports to (192.168.6.2)
+
+  ```bash
+  ip.addr==192.168.1.6 && ip.addr==192.168.1.2
+  ```
+
+  <img width="1874" height="543" alt="image" src="https://github.com/user-attachments/assets/4f92cef3-9d34-4416-9894-3a0db2c8f6de" />
 
 
 ---
