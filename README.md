@@ -123,7 +123,6 @@ The SOC team should consider the following actions:
 - Review firewall and IDS/IPS logs for related connections.
 - Determine whether other hosts were targeted.
 - Block or restrict the source if the activity is confirmed to be unauthorized.
-- Search for the identified IOC across the environment.
 
 
 ----
