@@ -54,8 +54,9 @@ TCP SYN Scan (commonly referred to as a half-open scan or stealth scan) is an ac
 
 **Note** 
 
-Normal 3-Way handshake
-<img width="800" height="343" alt="image" src="https://github.com/user-attachments/assets/9ec73a6c-00ea-498a-af6e-48c5930235a3" />  
+Normal 3-Way handshake  
+
+<img width="600" height="240" alt="image" src="https://github.com/user-attachments/assets/9ec73a6c-00ea-498a-af6e-48c5930235a3" />  
 
 
 TCP SYN Scan
