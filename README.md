@@ -74,7 +74,7 @@ tcp.flags.syn ==1 && tcp.flags.ack ==1
 **- Tip**  
 
 Wireshark displays relative TCP sequence numbers by default to make packet analysis easier. These are not the actual sequence numbers from the packets.  
-To view the real TCP sequence numbers, go to **Edit → Preferences → Protocols → TCP and uncheck Relative sequence numbers**.After disabling this option, we can see that the SYN packets have the same sequence number pattern. This is unusual for normal TCP communication and can be an indicator of automated scanning activity.
+To view the real TCP sequence numbers, go to **Edit → Preferences → Protocols → TCP and uncheck Relative sequence numbers**. After disabling this option, we can see that the SYN packets have the same sequence number pattern. This is unusual for normal TCP communication and can be an indicator of automated scanning activity.
 Also, notice that the time between the SYN packets is only a few milliseconds. This rapid and repetitive behavior, combined with multiple ports being scanned, strongly indicates an automated TCP SYN port scan.  
 
 <img width="1201" height="619" alt="image" src="https://github.com/user-attachments/assets/59f679d6-df91-4048-873b-105770f89215" />  
