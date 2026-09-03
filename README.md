@@ -69,7 +69,7 @@ TCP SYN Scan (commonly referred to as a half-open scan or stealth scan) is an ac
 <img width="600" height="240" alt="image" src="https://github.com/user-attachments/assets/b629bc18-a9ea-4937-ac33-159af7306281" />
 </p>
 
-
+---
 
 ## #Indicators of Compromise
 
@@ -94,6 +94,9 @@ TCP SYN Scan (commonly referred to as a half-open scan or stealth scan) is an ac
 - Does the activity represent a True Positive or False Positive?  
   True Positive
 
+  
+---
+
 ## #MITRE ATT&CK Mapping
 
 The observed reconnaissance activity can be mapped to:
@@ -102,6 +105,8 @@ The observed reconnaissance activity can be mapped to:
 
 This technique involves scanning systems to identify available network services and potential attack surfaces.
 The observed behavior is consistent with this technique because the source system attempted to communicate with multiple ports on the target host.  
+
+---
 
 ## #Recommended Actions
 
@@ -112,8 +117,17 @@ The observed behavior is consistent with this technique because the source syste
 The SOC team should consider the following actions:
 
 - Search the SIEM for additional activity from the same source.
+- Ensure that there is no open unused ports. 
 - Review firewall and IDS/IPS logs for related connections.
 - Determine whether other hosts were targeted.
 - Block or restrict the source if the activity is confirmed to be unauthorized.
 - Search for the identified IOC across the environment.
+
+
+----
+
+## #Lessons Learned
+
+This investigation demonstrates the importance of correlating network logs with packet-level evidence.
+While logs can identify suspicious connection attempts, Wireshark provides additional visibility into the underlying network behavior including TCP flags.
 
